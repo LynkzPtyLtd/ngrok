@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9339B8A6-B856-402C-9CD3-E0FE24594947}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7EF8139C-9B9A-4AC6-9529-5D861259A5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynkz.NGrok", "src\Lynkz.NGrok.csproj", "{688E2166-8BA8-4751-A9B3-DE89EF06393A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynkz.NGrok.Tests", "tests\Lynkz.NGrok.Tests.csproj", "{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynkz.NGrok.Build", "build\Lynkz.NGrok.Build.csproj", "{61671E72-9E47-430F-9451-4F857AA415F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{47A053A6-0B35-4D14-8161-C3BD075B9D6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{58E25B2B-46F7-4728-B58D-C6CC6DF6CDBB}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+		build.sh = build.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{BE7E37B6-1128-45E3-9CEE-CFE2B319CE0D}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\gh-actions-build.yaml = .github\workflows\gh-actions-build.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{688E2166-8BA8-4751-A9B3-DE89EF06393A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688E2166-8BA8-4751-A9B3-DE89EF06393A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688E2166-8BA8-4751-A9B3-DE89EF06393A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688E2166-8BA8-4751-A9B3-DE89EF06393A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61671E72-9E47-430F-9451-4F857AA415F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61671E72-9E47-430F-9451-4F857AA415F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61671E72-9E47-430F-9451-4F857AA415F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61671E72-9E47-430F-9451-4F857AA415F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{688E2166-8BA8-4751-A9B3-DE89EF06393A} = {9339B8A6-B856-402C-9CD3-E0FE24594947}
+		{F55B57CD-5A76-4790-B1A7-92F41E6B2DDC} = {7EF8139C-9B9A-4AC6-9529-5D861259A5AD}
+		{61671E72-9E47-430F-9451-4F857AA415F1} = {47A053A6-0B35-4D14-8161-C3BD075B9D6C}
+		{BE7E37B6-1128-45E3-9CEE-CFE2B319CE0D} = {58E25B2B-46F7-4728-B58D-C6CC6DF6CDBB}
+	EndGlobalSection
+EndGlobal

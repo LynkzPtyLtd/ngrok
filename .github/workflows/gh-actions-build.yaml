@@ -1,0 +1,27 @@
+name: build-publish
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.x
+      - name: Run cake
+        shell : bash
+        env:
+#          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+#          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          dotnet run --project ./build/Lynkz.NGrok.Build.csproj -- $args
