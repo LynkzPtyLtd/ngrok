@@ -20,7 +20,7 @@ jobs:
           dotnet-version: 6.0.x
       - name: Run cake
         shell : bash
-        env:
+#        env:
 #          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
 #          GITHUB_TOKEN: ${{ github.token }}
         run: |
