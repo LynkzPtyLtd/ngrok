@@ -2,7 +2,7 @@
 
 namespace Lynkz.NGrok.Build;
 
-[IsDependentOn(typeof(PackProjectTask))]
+[IsDependentOn(typeof(PublishArtifactsTask))]
 public sealed class Default : FrostingTask
 {
 }

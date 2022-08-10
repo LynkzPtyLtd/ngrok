@@ -6,15 +6,15 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Cake.Frosting" Version="2.2.0"/>
-        <PackageReference Include="Cake.Compression" Version="0.3.0"/>
-        <PackageReference Include="Cake.Incubator" Version="7.0.0"/>
-        <PackageReference Include="Mono.Unix" Version="7.1.0-final.1.21458.1"/>
+        <PackageReference Include="Cake.Frosting" Version="2.2.0" />
+        <PackageReference Include="Cake.Compression" Version="0.3.0" />
+        <PackageReference Include="Cake.Incubator" Version="7.0.0" />
+        <PackageReference Include="Mono.Unix" Version="7.1.0-final.1.21458.1" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="tools\**"/>
-        <Compile Remove="tools\**"/>
-        <EmbeddedResource Remove="tools\**"/>
+        <None Remove="tools\**" />
+        <Compile Remove="tools\**" />
+        <EmbeddedResource Remove="tools\**" />
     </ItemGroup>
 </Project>
