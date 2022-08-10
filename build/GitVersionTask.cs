@@ -1,3 +1,4 @@
+using Cake.Common.Build;
 using Cake.Common.Diagnostics;
 using Cake.Common.Tools.GitVersion;
 using Cake.Frosting;
@@ -14,8 +15,17 @@ public sealed class GitVersionTask : FrostingTask<BuildContext>
             UpdateAssemblyInfo = true
         });
 
+        var buildSystem = context.BuildSystem();
+        if (buildSystem.IsRunningOnGitHubActions)
+        {
+            context.Version = gitVersion.NuGetVersionV2;
+        }
+        else
+        {
+            context.Version ??= gitVersion.NuGetVersionV2;
+        }
+        
         context.AssemblyVersion ??= gitVersion.AssemblySemVer;
-        context.Version ??= gitVersion.NuGetVersionV2;
 
         context.Information($"Version: {context.Version} Assembly Version: {context.AssemblyVersion}");
     }

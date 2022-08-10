@@ -28,12 +28,6 @@ public class PublishArtifactsTask : FrostingTask<BuildContext>
                 ApiKey = context.EnvironmentVariable("NUGET_API_KEY"),
                 Source = "https://api.nuget.org/v3/index.json"
             });
-
-            context.DotNetNuGetPush(file, new DotNetNuGetPushSettings
-            {
-                ApiKey = context.EnvironmentVariable("GITHUB_TOKEN"),
-                Source = "https://nuget.pkg.github.com/LynkzPtyLtd/index.json"
-            });
         }
     }
 }
